@@ -30,6 +30,7 @@ $result = mysql_query("SELECT id_arma, real_name AS profile_name, arma_motto AS 
   while ($i < $num) {
 	  
    $id_arma = mysql_result($result,$i,"id_arma");
+   if (isset($id_arma)) {
    $profile_name = mysql_result($result,$i,"profile_name");
    $profile_remark = mysql_result($result,$i,"profile_remark");
    $profile_username = mysql_result($result,$i,"name");
@@ -42,7 +43,7 @@ $result = mysql_query("SELECT id_arma, real_name AS profile_name, arma_motto AS 
 		"<icq></icq>".
 		"<remark>$profile_remark</remark>".
 	"</member>\n";
-
+   }
    $i++;
   }
   mysql_close();
