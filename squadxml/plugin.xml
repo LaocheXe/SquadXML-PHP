@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="SquadXML" lan="LAN_SQUADXML" version="1.0" date="2016-04-26" compatibility="2.0" installRequired="true" >
+	<author name="LaocheXe" url="https://github.com/LaocheXe" />
+	<summary lan="">SquadXML is built for arma units</summary>
+	<description lan="">the long description of the plugin - please change later</description>
+	<keywords>
+		<word>gaming</word>
+		<word>arma</word>
+		<word>units</word>
+	</keywords>
+	<category>users</category>
+	<copyright>LaocheXe</copyright>
+	<adminLinks>
+		<link url="admin_config.php" description="" icon="" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
+	</adminLinks>
+	<pluginPrefs>
+		<pref name='unitName'>Your Unit Name</pref>
+		<pref name='unitTags'>TAGS</pref>
+		<pref name='unitEmail'>unitemail@unitwebsite.com</pref>
+		<pref name='unitWebsite'>http://unitwebsite.com</pref>
+		<pref name='unitPaa'>picture.paa</pref>
+		<pref name='unitTitle'>Unit Title Here</pref>
+	</pluginPrefs>
+</e107Plugin>

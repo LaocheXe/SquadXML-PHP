@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet
-	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="text()">
 	<xsl:value-of select="."/>
 </xsl:template>
@@ -10,18 +9,11 @@
 <xsl:template match="/">
 	<HTML>
 	<HEAD>
-		<TITLE><xsl:value-of select="/squad/name"/></TITLE>
-		<LINK REL="stylesheet" TYPE="text/css" HREF="squad.css"></LINK>
+		<TITLE>Squad XML - <xsl:value-of select="/squad/name"/></TITLE>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+		<LINK REL="stylesheet" TYPE="text/css" HREF="squad.css"/>
 	</HEAD>
-	<!--
-	XSL template for "squad.xml", used in "Armed Assault" (Ref: "http://www.armedassault.com")
-	and "Armed Assault 2" (Ref: "http://www.arma2.com")
-	See also the Arma-Wiki page: "http://community.bistudio.com/wiki/squad.xml"
-	Created by TomNedry, 26.Jan07
-        Reviewed by TomNedry, 15.Jul09
-	Lisence: Creative Common (http://creativecommons.org/licenses/by-nc-sa/2.5/deed.de)
-	To have a squad logo in the HTML output, just put a "sqd_logo.png" in the same folder...
-	-->
 	<BODY>
 	<!--Main TABLE -->                                                                             
 	<TABLE class="main">
@@ -46,24 +38,24 @@
 			<TR height="100%">
 				<TD width="100%" height="100%" valign="top">
 					<DIV class="sqd_logo">
-					<img src="HBA.png" alt="Picture: Squad Logo"/>
+					<img src="sqd_logo.png" alt="Picture: Squad Logo"/>
 					</DIV>
 				</TD>
 			</TR>
 			<TR height="10">
 				<TD class="sqd_website">
-					Web site: 
+					Website: 
 					<A>
 					   <xsl:attribute name="href">
-					   http://<xsl:value-of select="/squad/web"/>
-					   </xsl:attribute>
 					   <xsl:value-of select="/squad/web"/>
+					   </xsl:attribute>
+					   <xsl:value-of select="/squad/name"/>
 					</A>
 				</TD>
 			</TR>
 			<TR>
 				<TD class="sqd_email">	
-				 	e-mail:
+				 	Email:
 					<A>
 					  <xsl:attribute name="href">
 					  mailto:<xsl:value-of select="/squad/email"/>
@@ -72,6 +64,28 @@
 					</A>	
 				</TD>
 			</TR>
+            <TR>
+            </TR>
+            <TR>
+            <TD>
+            </TD>
+            </TR>
+			<TR height="10">
+				<TD class="sqd_website"> 
+					<A>
+					   <xsl:attribute name="href"></xsl:attribute>
+                       
+					</A>
+				</TD>
+			</TR>
+			<TR height="10">
+				<TD class="sqd_website">
+					<A>
+					   <xsl:attribute name="href"></xsl:attribute>
+                       
+					</A>
+				</TD>
+			</TR>                   
 		</TABLE>
 	<!-- Squad Info Table -->
 		</TD>
@@ -79,9 +93,8 @@
 	<!-- Member-Info Table -->
 						<TABLE class="member_info">
 							<Tr>
-								<Th>Members</Th>
-								<Th>E-Mail</Th>
-								<Th>ICQ</Th>
+								<Th>Name</Th>
+								<th>Position</th>
 							</Tr>
 							<xsl:for-each select="/squad/member">
 							<TR>
@@ -113,7 +126,7 @@
 							     <xsl:otherwise>two</xsl:otherwise>
 							  </xsl:choose>
 							</xsl:attribute>
-								<TD  class="member_remark" colspan="2" valign="top">
+								<TD class="member_remark" colspan="2" valign="top">
 								  <xsl:value-of select="remark"/>
 								</TD>
 							</TR>
@@ -124,9 +137,6 @@
 	</TD>
 	</TR>
 	</TABLE>
-	<p style="font-family:verdana;font-size:7pt;color:darkgrey;text-align:center;padding:10px;">
-	"squad.xsl" by <a href="http://hellsblackaces.com">Hell's Black Aces</a>, last change: 14.Apr16
-	</p>
 	</BODY>
 	</HTML>
 </xsl:template>

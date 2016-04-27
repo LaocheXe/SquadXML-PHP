@@ -1,0 +1,164 @@
+body
+{
+	font-family: Arial;
+	background-color: #000;
+	margin: 0px;
+	color: white;
+	background-image: url(./images/index.php);
+}
+
+a:link 
+{ 
+	text-decoration: none; 
+	color: #9d9d9d; 
+}
+a:visited 
+{
+	text-decoration: none; 
+	color: #9d9d9d; 
+}
+a:hover 
+{ 
+	text-decoration:none; 
+	color:#ffffff;
+	background-color: #111;
+}
+a:active 
+{ 
+	text-decoration: none; 
+}
+a:focus { 
+	text-decoration: none; 
+}
+
+th
+{
+	background-color:#284a16;
+	font-family:Arial;
+	color: white;
+	font-size:10pt;
+	font-weight:bold;
+	padding:4px;
+	text-align:center;
+}
+
+tr.one
+{
+	background-color:#284a16;
+	width:100%;
+	padding:4px;
+}
+tr.two
+{
+	background-color:#b4a340;
+	width:100%;
+	padding:4px;
+}
+td.one
+{
+	background-color:#284a16;
+	width:100%;
+}
+td.two
+{
+	background-color:#b4a340;
+}
+td.three
+{
+	background-color:#FF0000;
+	color:yellow;
+}
+.main
+{
+	text-align:center;
+	width:100%;
+	border:0px solid #333333;
+}
+div.sqd_name
+{
+	text-align:center;
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+}
+div.sqd_title
+{
+	text-align:center;
+	font-family:Arial;
+	font-size:10pt;
+}
+div.sqd_logo
+{
+	text-align:center;
+	font-size:8pt;
+	padding:5px;
+}
+.sqd_info
+{
+	width:100%;
+	padding:0px;
+	border-spacing:0px;
+}
+.sqd_website
+{
+	font-family:Arial; 
+	font-size:10pt;
+	text-align:center;
+	background-color:#284a16;
+	width:100%;
+	padding:4px;
+	border-spacing:0px;
+}
+.sqd_email
+{
+	font-family:Arial; 
+	font-size:10pt;
+	text-align:center;
+	background-color:#284a16;
+	width:100%;
+	padding:4px;
+	border-spacing:0px;
+}
+.left_row
+{
+	vertical-align:top;
+	height:100%;
+	width: 25%;
+}
+.right_row
+{
+	vertical-align:top;
+	height:100%;
+}
+.member_info
+{
+	width:100%;
+	padding:0px;
+	border-spacing:0px;
+	background-color: #284a16;
+}
+.member_name
+{
+	font-family:Arial;
+	background-color:#b4a340;
+	color: white;
+	font-size:10pt;
+	padding:4px;
+	text-align:left;
+}
+.member_remark
+{
+	font-family:Arial;
+	background-color:#b4a340;
+	color: white;
+	font-size:10pt;
+	text-align:center;
+}
+.member_email
+{
+	background-color: #b4a340;	
+}
+.member_icq
+{
+	background-color: #b4a340;	
+}
