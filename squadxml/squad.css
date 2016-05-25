@@ -50,7 +50,7 @@ tr.one
 }
 tr.two
 {
-	background-color:#b4a340;
+	background-color:/*#b4a340*/ rgba(180, 163, 64, 0.5);
 	width:100%;
 	padding:4px;
 }
@@ -83,6 +83,7 @@ div.sqd_name
 }
 div.sqd_title
 {
+	background-color:#b4a340;
 	text-align:center;
 	font-family:Arial;
 	font-size:10pt;
@@ -140,7 +141,7 @@ div.sqd_logo
 .member_name
 {
 	font-family:Arial;
-	background-color:#b4a340;
+	background-color:/*#b4a340*/ rgba(180, 163, 64, 0.5);
 	color: white;
 	font-size:10pt;
 	padding:4px;
@@ -149,16 +150,16 @@ div.sqd_logo
 .member_remark
 {
 	font-family:Arial;
-	background-color:#b4a340;
+	background-color:/*#b4a340*/ rgba(180, 163, 64, 0.5);
 	color: white;
 	font-size:10pt;
 	text-align:center;
 }
 .member_email
 {
-	background-color: #b4a340;	
+	background-color: /*#b4a340*/ rgba(180, 163, 64, 0.5);	
 }
 .member_icq
 {
-	background-color: #b4a340;	
+	background-color: /*#b4a340*/ rgba(180, 163, 64, 0.5);	
 }

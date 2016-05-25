@@ -20,5 +20,6 @@
 		<pref name='unitWebsite'>http://unitwebsite.com</pref>
 		<pref name='unitPaa'>picture.paa</pref>
 		<pref name='unitTitle'>Unit Title Here</pref>
+		<pref name='unitSquads'>0</pref>
 	</pluginPrefs>
 </e107Plugin>

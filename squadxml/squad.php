@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?php
+header('Content-Type: text/xsl');
+$_E107['no_online'] = true;
+$_E107['no_forceuserupdate'] = true;
+$_E107['no_menus'] = true;
+$_E107['allow_guest'] = true; // allow crons to run while in members-only mode.
+$_E107['no_maintenance'] = true;
+require_once("../../class2.php");
+
+
+// MAybe make a database table as squadxml_catagories with order function
+
+
+
+echo '<?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="text()">
 	<xsl:value-of select="."/>
@@ -10,8 +24,6 @@
 	<HTML>
 	<HEAD>
 		<TITLE>Squad XML - <xsl:value-of select="/squad/name"/></TITLE>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
 		<LINK REL="stylesheet" TYPE="text/css" HREF="squad.css"/>
 	</HEAD>
 	<BODY>
@@ -93,9 +105,15 @@
 	<!-- Member-Info Table -->
 						<TABLE class="member_info">
 							<Tr>
-								<Th>Name</Th>
+							<!-- <Th>Rank</Th> -->
+								<Th>Member</Th>
 								<th>Position</th>
 							</Tr>
+							<!-- <Tr>
+								<Th colspan="3"><center>Command Element</center></Th>
+							</Tr> -->
+							<!-- <xsl:for-each select="/squad/member[unit="CE"]"> -->
+							<!-- Below will be replaced -->
 							<xsl:for-each select="/squad/member">
 							<TR>
 								<xsl:attribute name="class">
@@ -104,6 +122,9 @@
 								     <xsl:otherwise>two</xsl:otherwise>
 								  </xsl:choose>
 								</xsl:attribute>
+								<!-- <TD class="member_rank" >
+								  <xsl:value-of select="rank"/>
+								</TD> -->
 								<TD class="member_name" rowspan="2">
 								  <xsl:value-of select="name"/>
 								</TD>
@@ -140,4 +161,5 @@
 	</BODY>
 	</HTML>
 </xsl:template>
-</xsl:stylesheet>
+</xsl:stylesheet>';
+?>

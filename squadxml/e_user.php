@@ -26,6 +26,8 @@ class squadxml_user // plugin-folder + '_user'
 			3 => array('label' => "ICQ Number", 'text' => $squadXML['arma_icq'])
 		);
 		
+		
+		
 		return $var;
 	}
 	
