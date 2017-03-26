@@ -13,3 +13,8 @@
  
  So this file pulls information off the database and displays is as an XML so admins don't have to go in every time there is a new member that joins to put in their arma id and change the name every time they get promoted.
  
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/LaocheXe/SquadXML-PHP/badge.svg?style=beer-square)](https://beerpay.io/LaocheXe/SquadXML-PHP)  [![Beerpay](https://beerpay.io/LaocheXe/SquadXML-PHP/make-wish.svg?style=flat-square)](https://beerpay.io/LaocheXe/SquadXML-PHP?focus=wish)
