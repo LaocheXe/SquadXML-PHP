@@ -70,7 +70,7 @@ class squadxml_exesystem_ui extends e_admin_ui
 		
 	//	protected $listQry      	= "SELECT * FROM `#tableName` WHERE field != '' "; // Example Custom Query. LEFT JOINS allowed. Should be without any Order or Limit.
 	
-		protected $listOrder		= 'xml_id DESC';
+		protected $listOrder		= 'Sort,arma_order';
 	
 		protected $fields 		= array (  'checkboxes' =>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
 		  'xml_id' =>   array ( 'title' => LAN_ID, 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
@@ -79,12 +79,12 @@ class squadxml_exesystem_ui extends e_admin_ui
 		  'arma_remark' =>   array ( 'title' => LAN_XML_REMARK, 'type' => 'textarea', 'data' => 'str', 'width' => 'auto', 'inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
 		  'arma_icq' =>   array ( 'title' => LAN_XML_ICQ, 'type' => 'text', 'data' => 'str', 'width' => 'auto', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
 		  'sqd_id' =>   array ( 'title' => 'Squad', 'type' => 'dropdown', 'data' => 'int', 'width' => '5%', 'inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
-		  'arma_order' =>   array ( 'title' => 'ArmA Order', 'type' => 'number', 'data' => 'int', 'width' => 'auto', 'inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
+		  'arma_order' =>   array ( 'title' => LAN_ORDER, 'type' => 'number', 'data' => 'int', 'width' => 'auto', 'inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
 		  'options' =>   array ( 'title' => LAN_OPTIONS, 'type' => null, 'data' => null, 'width' => '10%', 'thclass' => 'center last', 'class' => 'center last', 'forced' => '1',  ),
 		);		
 		
 		
-		protected $fieldpref = array('user_id','arma_id','sqd_id','arma_remark');
+		protected $fieldpref = array('user_id', 'arma_id', 'sqd_id', 'arma_remark', 'Sort', 'arma_order');
 		
 
 	//	protected $preftabs        = array('General', 'Other' );
