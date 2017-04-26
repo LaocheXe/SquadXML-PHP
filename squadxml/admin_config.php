@@ -9,7 +9,7 @@ if (!getperms('P'))
 	exit;
 }
 
- e107::lan('squadxml',true);
+e107::lan('squadxml',true, true);
 
 
 class squadxml_adminArea extends e_admin_dispatcher

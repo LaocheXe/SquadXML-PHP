@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e107Plugin name="SquadXML" lan="LAN_SQUADXML" version="1.0" date="2016-04-26" compatibility="2.0" installRequired="true" >
+<e107Plugin name="SquadXML" lan="LAN_PLUGIN_SQD_NAME" version="2.0" date="2016-04-26" compatibility="2.0" installRequired="true" >
 	<author name="LaocheXe" url="https://github.com/LaocheXe" />
-	<summary lan="">SquadXML is built for arma units</summary>
-	<description lan="">the long description of the plugin - please change later</description>
+	<contributors>
+    	<contributor name="CaMer0n" url="https://github.com/CaMer0n" />
+    </contributors>
+	<summary lan="LAN_PLUGIN_SQD_BATCH">Create SquadXML for the ArmA series</summary>
+	<description lan="LAN_PLUGIN_SQD_DESCRIPTION">Generate a Squad XML with out needing to code the XML yourself. This plugin will all any user with the permisions to add, edit, remove users from the PHP generated Squad XML.</description>
 	<keywords>
 		<word>gaming</word>
 		<word>arma</word>
