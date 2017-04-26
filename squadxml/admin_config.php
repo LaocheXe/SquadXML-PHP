@@ -64,13 +64,13 @@ class squadxml_exesystem_ui extends e_admin_ui
 		protected $perPage			= 20; 
 		protected $batchDelete		= true;
 	//	protected $batchCopy		= true;		
-	//	protected $sortField		= 'somefield_order';
-	//	protected $orderStep		= 10;
+		protected $sortField		= 'arma_order';
+		protected $orderStep		= 1;
 	//	protected $tabs				= array('Tabl 1','Tab 2'); // Use 'tab'=>0  OR 'tab'=>1 in the $fields below to enable. 
 		
 	//	protected $listQry      	= "SELECT * FROM `#tableName` WHERE field != '' "; // Example Custom Query. LEFT JOINS allowed. Should be without any Order or Limit.
 	
-		protected $listOrder		= 'Sort,arma_order';
+		protected $listOrder		= 'arma_order';
 	
 		protected $fields 		= array (  'checkboxes' =>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
 		  'xml_id' =>   array ( 'title' => LAN_ID, 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
@@ -84,7 +84,7 @@ class squadxml_exesystem_ui extends e_admin_ui
 		);		
 		
 		
-		protected $fieldpref = array('user_id', 'arma_id', 'sqd_id', 'arma_remark', 'Sort', 'arma_order');
+		protected $fieldpref = array('user_id','arma_id','sqd_id','arma_remark','Sort','arma_order');
 		
 
 	//	protected $preftabs        = array('General', 'Other' );
