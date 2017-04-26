@@ -3,6 +3,7 @@
 	<author name="LaocheXe" url="https://github.com/LaocheXe" />
 	<contributors>
     	<contributor name="CaMer0n" url="https://github.com/CaMer0n" />
+		<contributor name="Jimmi08" url="https://github.com/Jimmi08" />
     </contributors>
 	<summary lan="LAN_PLUGIN_SQD_BATCH">Create SquadXML for the ArmA series</summary>
 	<description lan="LAN_PLUGIN_SQD_DESCRIPTION">Generate a Squad XML with out needing to code the XML yourself. This plugin will all any user with the permisions to add, edit, remove users from the PHP generated Squad XML.</description>

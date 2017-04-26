@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS `squadxml_exesystem` (
   `arma_remark` text NOT NULL,
   `arma_icq` varchar(255) NOT NULL,
   `sqd_id` int(10) DEFAULT NULL,
+  `arma_order` int(10) NOT NULL,
   PRIMARY KEY (`xml_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
