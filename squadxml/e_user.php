@@ -31,4 +31,9 @@ class squadxml_user // plugin-folder + '_user'
 		return $var;
 	}
 	
+	function profile($edit) // TODO - Check
+	{
+		
+	}
+	
 }
